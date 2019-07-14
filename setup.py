@@ -18,7 +18,7 @@ setup_requirements = [ ]
 test_requirements = [ ]
 
 setup(
-    author="model_bundle",
+    author="xk",
     author_email='xhkong@utexas.edu',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

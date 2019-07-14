@@ -18,14 +18,14 @@ model_params_grid_pca = {
     'SparsePCA': {'n_components': [1, ], },
 }
 
-# model_list_cluster = [
-#     (cluster.AgglomerativeClustering, {}),
-#     (cluster.KMeans, {}),
-#     (cluster.DBSCAN, {})
-# ]
+model_list_cluster = [
+    (cluster.AgglomerativeClustering, {}),
+    (cluster.KMeans, {}),
+    (cluster.DBSCAN, {})
+]
 
-# model_params_cluster = {
-#     ('AgglomerativeClustering', {'n_clusters': 2}),
-#     ('KMeans', {'n_clusters': 2}),
-#     ('DBSCAN', {'eps': 10, })
-# }
+model_params_cluster = {
+    'AgglomerativeClustering': {'n_clusters': 2},
+    'KMeans': {'n_clusters': 2},
+    'DBSCAN': {'eps': 10, },
+}

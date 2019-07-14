@@ -44,12 +44,12 @@ class TestModelBundle(unittest.TestCase):
         models.fit(self.X)
         # models.transform(self.X)
 
-    # def test_002_fit_cluster(self):
-    #     """Test workflow."""
-    #     from model_bundle.model_params import model_list_cluster, model_params_cluster
-    #     models = ModelBundle(model_list=model_list_cluster)
-    #     models.fit(self.X)
-    #     # models.transform(self.X)
+    def test_002_fit_cluster(self):
+        """Test workflow."""
+        from model_bundle.model_params import model_list_cluster, model_params_cluster
+        models = ModelBundle(model_list=model_list_cluster)
+        models.fit(self.X)
+        # models.transform(self.X)
 
     def test_003_fit(self):
         """Test workflow."""
@@ -57,6 +57,10 @@ class TestModelBundle(unittest.TestCase):
         models.fit(self.X)
         models.transform(self.X)
 
+    def test_000_model_params(self):
+        # from model_bundle.model_params import *
+        pass
+    
     def test_do_nonthing(self):
         pass
     
